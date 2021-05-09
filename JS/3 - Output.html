@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My First Web Page</h1>
+        <p>My First Paragraph</p>
+
+        <p id="demo"></p>
+
+        <!-- printar conteudo n102030a tela-->
+        <button onclick="window.print()">Print this page</button>
+
+        <!-- document write dps do html apaga todos os elementos da tela-->
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+        
+        <script> 
+            // modo mais comum de mostrar dados 
+            document.getElementById("demo").innerHTML = 5 + 4;
+
+            // para proposito de testes 
+            document.write(5 + 5);
+
+            // para mostrar algo em uma caixa de dialogo
+            alert(5+5);
+
+            // por fim para fins de depuração 
+            console.log(5+5);
+        </script>
+    </body>
+</html>
