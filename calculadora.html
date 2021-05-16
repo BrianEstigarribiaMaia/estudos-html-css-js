@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100px, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="calculadora.js"></script>
+</head>
+
+<body>
+    <div id="calculadora">
+        <h1 class="logo">BASIC CALC</h1>
+        <div id="header">
+            <div id="tela"></div>
+        </div>
+        <div id="botoes">
+            <div>
+                <button class="botaoDigito" value="7">7</button>
+                <button class="botaoDigito" value="8">8</button>
+                <button class="botaoDigito" value="9">9</button>
+                <button class="botaoAcao"   value="C">C</button>
+            </div>
+            <div>
+                <button class="botaoDigito" value="4">4</button>
+                <button class="botaoDigito" value="5">5</button>
+                <button class="botaoDigito" value="6">6</button>
+                <button class="botaoAcao"   value="+">+</button>
+
+            </div>
+            <div>
+                <button class="botaoDigito" value="1">1</button>
+                <button class="botaoDigito" value="2">2</button>
+                <button class="botaoDigito" value="3">3</button>
+                <button class="botaoAcao"   value="-">-</button>
+            </div>
+            <div>
+                <button class="botaoAcao"   value="/">/</button>
+                <button class="botaoDigito" value="0">0</button>
+
+                <button class="botaoAcao"   value="*">*</button>
+                <button class="botaoAcao"   value="=">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var botoesDigitos = document.getElementsByClassName('botaoDigito');
+        botoesDigitos[0].onclick = botaoDigitoClick;
+        botoesDigitos[1].onclick = botaoDigitoClick;
+        botoesDigitos[2].onclick = botaoDigitoClick;
+        botoesDigitos[3].onclick = botaoDigitoClick;
+        botoesDigitos[4].onclick = botaoDigitoClick;
+        botoesDigitos[5].onclick = botaoDigitoClick;
+        botoesDigitos[6].onclick = botaoDigitoClick;
+        botoesDigitos[7].onclick = botaoDigitoClick;
+        botoesDigitos[8].onclick = botaoDigitoClick;
+        botoesDigitos[9].onclick = botaoDigitoClick;
+
+        var botoesAcoes = document.getElementsByClassName('botaoAcao');
+        botoesAcoes[0].onclick = botaoAcaoClick;
+        botoesAcoes[1].onclick = botaoAcaoClick;
+        botoesAcoes[2].onclick = botaoAcaoClick;
+        botoesAcoes[3].onclick = botaoAcaoClick;
+        botoesAcoes[4].onclick = botaoAcaoClick;
+        botoesAcoes[5].onclick = botaoAcaoClick;
+    </script>
+
+</body>
+
+</html>
