@@ -1,0 +1,8 @@
+#teste{
+	list-style-position: inside;
+	list-style-image: url('face.png');
+}
+
+ul{
+	list-style-type: square;
+}
