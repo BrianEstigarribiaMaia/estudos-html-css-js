@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JAVA SCRIPT FUNCTIONS</h2>
+
+        <p>
+            This exemple calls a function which performs a calculation
+            an returns the result:
+        </p>
+
+        <p id="demoA"></p>
+
+
+        <p>
+            This exemple calls a function to convert from Fahrenheit to 
+            Celcius:
+        </p>
+
+        <p id="demoB"></p>
+
+        <script>
+            var x = mult(4,4); // chamada de funcção 
+            document.getElementById("demoA").innerHTML = x;
+
+            function mult(a,b){
+                return a * b; // função reotna o produto da multiplicação
+            }
+
+            function toCelscius(fahrenheit){
+                return (5/9) * (fahrenheit - 32);
+            }
+
+            document.getElementById("demoB").innerHTML = toCelscius(77);
+
+            //função como variavel 
+            /*document.getElementById("demoB").innerHTML =
+            "The temperature is " + toCelsius(77) + " Celsius";*/
+        </script>
+    </body>
+</html>

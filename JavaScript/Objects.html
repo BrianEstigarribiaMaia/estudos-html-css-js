@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JAVASCRIPT OBJECTS</h1>
+        
+        <p>
+            There are two differnt ways to access an object 
+            propriety. 
+        </p>
+
+        <p> You can use person.proptriety or person["propriety"]</p>
+
+        <p id="demo"></p>
+
+        <p>
+            Method Access
+        </p>
+
+        <p id="demoB"></p>
+
+        <script>
+            //criar objeto
+            var person = {
+                firstName : "John",
+                lastName : "Doe",
+                id : 5566,
+                fullInfo : function() {
+                    return "Full Name:" + this.firstName + " " +this.lastName + "<br>" + "ID: " + this.id;
+                }
+            };
+
+            //mostrar dados do objeto via propriedade
+            document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+
+            //mostrar dados do objeto via metodo
+            document.getElementById("demoB").innerHTML = person.fullInfo();
+        </script>
+    </body>
+</html>
