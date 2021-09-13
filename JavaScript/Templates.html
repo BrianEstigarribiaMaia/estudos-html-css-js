@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Javascript Templates</title>
+  </head>
+  <body>
+    <h2>Javascript Templates Exemple</h2>
+
+    <p id="demo"></p>
+    <p id="name"></p>
+    <p id="html"></p>
+
+    <script>
+      let price = 10;
+      let tax = 0.25;
+      let total = ` Total: ${(price * (1 + tax)).toFixed(2)}`;
+
+      document.getElementById("demo").innerHTML = total;
+
+      let firstName = "John";
+      let lastName = "Doe";
+      let text = `Welcome ${firstName}, ${lastName}`;
+
+      document.getElementById("name").innerHTML = text;
+
+      let header = "Template Literals";
+      let tags = ["template literals", "javascript", "es6"];
+      let html = `<h2>${header}</h2><ul>`;
+
+      for (const x of tags) {
+        html += `<li>${x}</li>`;
+      }
+
+      html += `</ul>`;
+
+      document.getElementById("html").innerHTML = html;
+    </script>
+  </body>
+</html>
