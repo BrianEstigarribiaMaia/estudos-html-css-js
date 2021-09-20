@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>JavaScript String</title>
+  </head>
+  <body>
+    <h2>String proprieties</h2>
+
+    <p>
+      A propriedade length retorna o tamanho de uma string <br />
+      Quantidade de letras do alfabeto:
+    </p>
+    <p id="demo1"></p>
+
+    <p>
+      O metodo slice() extrai uma parte da string e rertorna a parte extaida em
+      uma nova string.
+    </p>
+    <p id="demo2"></p>
+
+    <p>O metodo replace() troca um valor na string por outro</p>
+    <button onclick="myFunction()">Replace</button>
+    <p id="demo3">Visit Microsoft!</p>
+
+    <p>O metodo toUpperCase() converte a string para caixa alta</p>
+    <button onclick="myUpper()">toUpper</button>
+    <p id="demo4">microsoft</p>
+
+    <p>O metodo toLowerCase() converte a string para caixa baixa</p>
+    <button onclick="myLower()">toLower</button>
+    <p id="demo5">MICROSOFT</p>
+
+    <script>
+      let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      document.getElementById("demo1").innerHTML = alfabeto.length;
+
+      let str = "Apple, Banana, Kiwi";
+      document.getElementById("demo2").innerHTML = str.slice(7, 13);
+
+      function myFunction() {
+        let text = document.getElementById("demo3").innerHTML;
+        document.getElementById("demo3").innerHTML = text.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+
+      function myUpper() {
+        let text = document.getElementById("demo4").innerHTML;
+        document.getElementById("demo4").innerHTML = text.toUpperCase();
+      }
+
+      function myLower() {
+        let text = document.getElementById("demo5").innerHTML;
+        document.getElementById("demo5").innerHTML = text.toLowerCase();
+      }
+    </script>
+  </body>
+</html>
