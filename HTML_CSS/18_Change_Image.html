@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troca de Imagem</title>
+  </head>
+  <body>
+    <h2>Mostrar uma imagem diferenre quando redimencionar a tela</h2>
+
+    <picture>
+      <source srcset="img/img_smallflower.jpg" media="(max-width:600px)" />
+      <source srcset="img/img_flowers.jpg" media="(max-width:1500px)" />
+      <source srcset="img/flowers.jpg" />
+      <img src="img/img_flowers.jpg" alt="flowers" style="width: auto" />
+    </picture>
+  </body>
+</html>
