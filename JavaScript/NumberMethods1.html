@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Methods</title>
+  </head>
+  <body>
+    <p>O metodo toString() converte um numero em string</p>
+    <p id="demo1"></p>
+
+    <p>
+      O metodo toExponential() retorna uma string, com o numero arredondado e
+      escrito usando a notação exponencial. O parametro opcional define a
+      quentidade de digitos apos a casa deceimal.
+    </p>
+    <p id="demo2"></p>
+
+    <p>
+      O metodo toFixed() arredonda o numero para o dado numero de digitos. Para
+      trabalhar com dinheiro o ideal é usar o toFixed(2);
+    </p>
+    <p id="demo3"></p>
+
+    <p>
+      O metodo toPrecision() retorna uma string, com um numero escrito com o
+      tamanho especificado
+    </p>
+    <p id="demo4"></p>
+
+    <script>
+      let x = 123;
+      document.getElementById("demo1").innerHTML =
+        x.toString() +
+        "<br>" +
+        (123).toString() +
+        "<br>" +
+        (100 + 23).toString();
+
+      let y = 9.656;
+      document.getElementById("demo2").innerHTML =
+        y.toExponential() +
+        "<br>" +
+        y.toExponential(2) +
+        "<br>" +
+        y.toExponential(4) +
+        "<br>" +
+        y.toExponential(6);
+
+      document.getElementById("demo3").innerHTML =
+        y.toFixed(0) +
+        "<br>" +
+        y.toFixed(2) +
+        "<br>" +
+        y.toFixed(4) +
+        "<br>" +
+        y.toFixed(6);
+
+      document.getElementById("demo4").innerHTML =
+        y.toPrecision() +
+        "<br>" +
+        y.toPrecision(2) +
+        "<br>" +
+        y.toPrecision(4) +
+        "<br>" +
+        y.toPrecision(6);
+    </script>
+  </body>
+</html>
