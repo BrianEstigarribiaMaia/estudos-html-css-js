@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays 1</title>
+  </head>
+  <body>
+    <p>A propriedade length do JS retorna o tamanho de um array</p>
+    <p id="demo1"></p>
+
+    <p>
+      Elementos de um array em JS são acessados usando indices
+      numericos(iniciando em 0)
+    </p>
+
+    Elemento 1 indice 0 :
+    <p id="demo2"></p>
+    Elemento 4 indice 3:
+    <p id="demo3"></p>
+
+    <p>O método push anexa um novo elemento a um array</p>
+    <button onclick="myFunction()">Clique</button>
+    <p id="demo4"></p>
+
+    <p>Array.forEach () chama uma função para cada elemento do array</p>
+    <p id="demo5"></p>
+
+    <p>JavaScript usa nomes para acessar as propriedades do objeto.</p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+      const fruits = ["banana", "orange", "apple", "mango"];
+      document.getElementById("demo1").innerHTML = fruits.length;
+      document.getElementById("demo2").innerHTML = fruits[0];
+      document.getElementById("demo3").innerHTML = fruits[fruits.length - 1];
+      document.getElementById("demo4").innerHTML = fruits;
+
+      function myFunction() {
+        fruits.push("Lemon");
+        document.getElementById("demo4").innerHTML = fruits;
+      }
+
+      let text = "<ul>";
+      fruits.forEach(myFunction2);
+      text += "</ul>";
+      document.getElementById("demo5").innerHTML = text;
+
+      function myFunction2(value) {
+        text += "<li>" + value + "</li>";
+      }
+
+      const person = { firstName: "John", lastName: "Doe", age: 46 };
+      document.getElementById("demo6").innerHTML = person.firstName;
+      document.getElementById("demo7").innerHTML = person.lastName;
+      document.getElementById("demo8").innerHTML = person.age;
+    </script>
+  </body>
+</html>
